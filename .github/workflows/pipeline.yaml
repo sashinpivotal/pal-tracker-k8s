@@ -6,7 +6,7 @@ on:
 
 env:
   DOCKER_HUB_USERNAME: axykim00
-  GCP_PROJECT_NAME: k8s-0727-sashi
+  GCP_PROJECT_NAME: k8s-0727-sashin
   K8S_CLUSTER_NAME: pal-for-devs-k8s
 
 jobs:
