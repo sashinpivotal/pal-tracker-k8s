@@ -5,9 +5,9 @@ on:
     branches: [master]
 
 env:
-  DOCKER_HUB_USERNAME: ...
-  GCP_PROJECT_NAME: ...
-  K8S_CLUSTER_NAME: ...
+  DOCKER_HUB_USERNAME: axykim00
+  GCP_PROJECT_NAME: k8s-0727-sashi
+  K8S_CLUSTER_NAME: pal-for-devs-k8s
 
 jobs:
   build-pack-and-publish:
