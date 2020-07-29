@@ -28,7 +28,7 @@ jobs:
       - run: ../flyway-6.3.1/flyway -url="jdbc:postgresql://localhost:5432/tracker_test" -locations=filesystem:databases/tracker clean migrate -user=tracker -password='password'
       - name: Build with Gradle
         run: ./gradlew build
-      - run: sudo apt-get install docker
+      - run: sudo curl -sSl https://get.docker.com/ | sh
       - run: docker login -u "${{env.DOCKER_HUB_USERNAME}}" -p "${{secrets.DOCKER_HUB_PASSWORD}}"
       - run: curl -LO https://github.com/buildpacks/pack/releases/download/v0.10.0/pack-v0.10.0-linux.tgz
       - run: tar xvf pack-v0.10.0-linux.tgz
