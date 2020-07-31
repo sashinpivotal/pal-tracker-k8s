@@ -19,6 +19,9 @@ spec:
       containers:
         - name: pal-tracker-container
           image: axykim00/pal-tracker:v3
+          envFrom:
+            - secretRef:
+                name: db-credentials
           resources:
             limits:
               cpu: "100m"

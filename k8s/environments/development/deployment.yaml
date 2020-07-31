@@ -7,7 +7,7 @@ spec:
     spec:
       containers:
         - name: pal-tracker-container
-          image: axykim00/pal-tracker:build-github.run_number
+          image: axykim00/pal-tracker:v3
           env:
             - name: SPRING_DATASOURCE_HIKARI_MAXIMUMPOOLSIZE
               valueFrom:
